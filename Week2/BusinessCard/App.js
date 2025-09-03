@@ -9,21 +9,21 @@ export default function App() {
         <View style={styles.imageContainer}>
           <Image
             style={styles.image}
-            source={require("./assets/images/business_image.jpeg")}
+            source={require("./assets/images/self_picture.jpg")}
           />
         </View>
         <View style={styles.textContainer}>
           <Text 
-          style={styles.name}>Worldfire Games</Text>
+          style={styles.name}>Thomas Gilbert</Text>
           <Text style={styles.text}
-          onPress={ () => {Linking.openURL("https://worldfiregames.tcgplayerpro.com/")} }
-          >worldfiregames.tcgplayerpro.com</Text>
+          onPress={ () => {Linking.openURL("mailto:thomasgilbert280@gmail.com")} }
+          >thomasgilbert280@gmail.com</Text>
           <Text style={styles.text}
-          onPress={ () => {Linking.openURL("tel:8436500083")} }
-          >843-650-0083</Text>
+          onPress={ () => {Linking.openURL("tel:6152415012")} }
+          >615-241-5012</Text>
           <Text style={styles.text}
-          onPress={ () => {Linking.openURL("https://maps.app.goo.gl/QdT8h8oY4AYZXYtS9")} }
-          >Open in Google Maps</Text>
+          onPress={ () => {Linking.openURL("https://github.com/ThomasGilbert280/CSCI-343-E1-Fall-2025")} }
+          >GitHub Repository</Text>
         </View>
       </SafeAreaView>
 
@@ -56,12 +56,12 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   imageContainer: {
-    flex: 3,
-    marginTop: 150
+    flex: 4,
+    marginTop: 100
   },
   image: {
-    height: 250, 
-    resizeMode: "cover",
+    height: 300, 
+    resizeMode:"contain",
     borderColor: "black",
     borderWidth: 5
   }
