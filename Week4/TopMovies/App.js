@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View} from 'react-native';
-import { SafeAreaView, FlatList, ScrollView } from 'react-native-safe-area-context';
-import Movie from "./components/Movie";
+import { StyleSheet, Text, View, Image, FlatList, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import Movie from './components/Movie';
+
 
 
 
@@ -69,17 +70,19 @@ export default function App() {
 
         <View style={styles.listContainer}>
           <FlatList
-            alwaysBounceVertical ={false}
+            alwaysBounceVertical={false}
             showVerticalScrollIndicator={false}
             data={movieItems}
             keyExtractor={(item, index) => item.name}
-            renderItem={({ item }) => (
-              <Movie 
-                name={item.name}
-                image={item.image}
-                rating={item.rating}
-              />
-            )}
+            renderItem={({ item, index }) => {
+              return (
+                <Movie
+                  name={item.name}
+                  image={item.image}
+                  rating={item.rating}
+                />
+              );
+            }}
           />
         </View>
       </SafeAreaView>
@@ -90,9 +93,9 @@ export default function App() {
 const styles = StyleSheet.create({
   rootContainer: {
     flex: 1,
-    backgroundColor: '#177224ff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#177224ff",
+    alignItems: "center",
+    justifyContent: "center",
   },
   titleContainer: {
     justifyContent: "center",

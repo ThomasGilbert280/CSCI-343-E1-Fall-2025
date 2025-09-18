@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function Movie(props) {
@@ -41,7 +40,7 @@ const styles = StyleSheet.create({
     },
     moviePoster: {
         width: "100%",
-        height: 255,
+        height: 540,
         resizeMode: "cover"
     },
     ratingContainer: {
