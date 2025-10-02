@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         height: 70,
-        width: 180,
+        width: 150,
         margin: 10,
         borderRadius: 8,
         borderWidth: 2,
@@ -38,8 +38,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 20,
-        textColor: "white",
         textAlign: 'center',
-        fontFamily: "Papernotes-Bold",
+        fontFamily: "Note",
     }
 })

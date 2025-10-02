@@ -24,9 +24,9 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState('home');
   const [currentID, setCurrentID] = useState(4);
   const [currentRecipes, setRecipes] = useState([
-    {id: 1, title: 'Spaghetti Bolognese', instructions: 'Cook spaghetti.\n Brown beef.\n Mix with sauce.'},
-    {id: 2, title: 'Chicken Curry', instructions: 'Cook chicken.\n Add curry powder and coconut milk.\n Simmer.'},
-    {id: 3, title: 'Grilled Cheese Sandwich', instructions: 'Butter bread.\n Place cheese between slices.\n Grill until golden brown.'},
+    {id: 1, title: 'Spaghetti Bolognese', text: 'Cook spaghetti.\nBrown beef.\nMix with sauce.'},
+    {id: 2, title: 'Chicken Curry', text: 'Cook chicken.\nAdd curry powder and coconut milk.\nSimmer.'},
+    {id: 3, title: 'Grilled Cheese Sandwich', text: 'Butter bread.\nPlace cheese between slices.\nGrill until golden brown.'},
   ]);
 
   function homeScreenHandler() {
@@ -41,10 +41,10 @@ export default function App() {
     setCurrentScreen('addRecipe');
   }
 
-  function addRecipeHandler(title, instructions) {
+  function addRecipeHandler(title, text) {
     setRecipes((currentRecipes) => [
       ...currentRecipes,
-      {id: currentID, title: enteredTitle, instructions: enteredInstructions},
+      {id: currentID, title: title, text: text},
     ]);
     setCurrentID(currentID + 1);
     setCurrentScreen('recipe');
@@ -72,9 +72,9 @@ export default function App() {
   if (currentScreen === 'addRecipe') {
     screen = (
     <AddRecipeScreen 
-    onBack={recipeScreenHandler}
-    onAdd={addRecipeHandler}
-     />
+      onBack={recipeScreenHandler}
+      onAdd={addRecipeHandler}
+    />
     );
   }
   

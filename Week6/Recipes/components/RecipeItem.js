@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         margin: 8,
         borderRadius: 6,
-        backgroundColor: Colors.accent500,
+        borderWidth: 2,
+        borderColor: "black",
+        backgroundColor: Colors.primary500,
     },
     titleContainer: {
         justifyContent: 'center',
@@ -37,6 +39,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontFamily: "PNBold",
         padding: 8,
+        color: Colors.accent500,
     },
     buttonContainer: {
         flexDirection: 'row',
