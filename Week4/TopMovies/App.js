@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View, Image, FlatList, ScrollView } from 'react-native';
+import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Movie from './components/Movie';
 

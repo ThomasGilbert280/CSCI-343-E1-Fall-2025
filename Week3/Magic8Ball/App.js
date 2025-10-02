@@ -8,7 +8,7 @@ export default function App() {
   const maxValue = 20;
   // state management variables
 
-  const [userQuestion, setUserQuestion] = useState("Ask a question")
+  const [userQuestion, setUserQuestion] = useState("")
   const [response, setResponse] = useState("Ask a question to recieve wisdom.")
   const responses = [
     "It is certain",

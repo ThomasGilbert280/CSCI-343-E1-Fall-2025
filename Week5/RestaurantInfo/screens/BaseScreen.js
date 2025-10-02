@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   infoText: {
-    fontSize: 30,
+    fontSize: 27,
     textAlign: 'center',
     padding: 7,
     fontFamily: "fjalla-one",
