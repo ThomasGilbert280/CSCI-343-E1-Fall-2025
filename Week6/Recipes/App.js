@@ -24,7 +24,7 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState('home');
   const [currentID, setCurrentID] = useState(4);
   const [currentRecipes, setRecipes] = useState([
-    {id: 1, title: 'Spaghetti Bolognese', text: 'Cook spaghetti.\nBrown beef.\nMix with sauce.'},
+    {id: 1, title: 'Spaghetti and Meatballs', text: 'Cook spaghetti.\nCook meatballs until brown.\nMix with sauce.'},
     {id: 2, title: 'Chicken Curry', text: 'Cook chicken.\nAdd curry powder and coconut milk.\nSimmer.'},
     {id: 3, title: 'Grilled Cheese Sandwich', text: 'Butter bread.\nPlace cheese between slices.\nGrill until golden brown.'},
   ]);
