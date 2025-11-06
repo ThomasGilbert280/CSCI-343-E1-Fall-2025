@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "VacationFinder",
+    "slug": "VacationFinder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/camping-splash.jpg",
+  "userInterfaceStyle": "light",
+  "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/camping-splash.jpg",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/camping-splash.jpg",
+        "backgroundColor": "#000000"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.VacationFinder"
+    },
+    "web": {
+      "favicon": "./assets/images/camping-splash.jpg"
+    }
+  }
+}
